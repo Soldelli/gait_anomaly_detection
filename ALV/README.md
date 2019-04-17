@@ -7,11 +7,13 @@ The smartphone used in the paper submission is an "Asus Zenfone 2".</br>
 To install this application on a smartphone follow these steps:
 
 - Download and install [Android Studio](https://developer.android.com/studio).
-- Select `Open an existing project` and chose the ALV folder of this repository.
+- Select `Open an existing Android Studio project` and chose the ALV folder of this repository.
 - Connect the smartphone you want to use for data collection and pair it with the computer is necessary.
 - Clic on the green play button and when asked select the smatphone as testing devide. This will install the application on the smartphone.
 
 ## Usage
+![screenshot](https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/Screenshot_app.png | width=100)
+
 One che application is installed you can start recording gait cicles.
 
 - Open the application and input the required information 
