@@ -13,6 +13,12 @@ conda env create -n gait_analysis -f gait_analysis.yml
 conda activate gait_analysis 
 ```
 
+## Data
+Download the preprocessed data from this [link](https://drive.google.com/open?id=1Bw7bP53lxut0pTpHY35zL2dm6wXRkSV3).</br>
+Unpack the downloaded zip and move the content into the folder `./data/`.</br>
+Check that folder for more details about the files.
+
+
 ## Instructions
 The first time you run the code you MUST follow these steps:</br></br>
 **1 - Prepare the data:** This operation will prepare the data for the training opeations that come after.
