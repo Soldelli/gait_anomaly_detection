@@ -9,7 +9,7 @@ To install this application on a smartphone follow these steps:
 - Download and install [Android Studio](https://developer.android.com/studio).
 - Select `Open an existing Android Studio project` and chose the ALV folder of this repository.
 - Connect the smartphone you want to use for data collection and pair it with the computer is necessary.
-- Clic on the green play button and when asked select the smatphone as testing devide. This will install the application on the smartphone.
+- Click on the green play button and when asked to select the smartphone as a testing device. This will install the application on the smartphone.
 
 ## Usage
 <p align="center">
@@ -17,19 +17,19 @@ To install this application on a smartphone follow these steps:
 <img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/chest_support.jpg" width="300" height="450" hspace="50">
 </p>
 
-Once the application is installed it is possible to start recording gait cicles.
+Once the application is installed it is possible to start recording gait cycles..
 
 - Open the application and input the required information 
     - `Name` of the user
     - `Type` of activity
     - Keep `camera enabled` if you are planning to test our inference model.
     - Write any kind of `note` if needed, i.e. the kind of impairment movement you might want to mimic.
-    - Select the `Start delay`: amaout of time (in seconds) the acquisitions process will be delayed after pressing the recording button. This gived the user the time to correctly place the smartphone on the ad-hoc made chest support.
-    - Input the `Acquisition time`: amount of time (in seconds) the acquisition process will last.
+    - Select the `Start delay`: the amount of time (in seconds) the acquisitions process will be delayed after pressing the recording button. This gives the user the time to correctly place the smartphone on the ad-hoc made chest support.
+    - Input the `Acquisition time`: the amount of time (in seconds) the acquisition process will last.
     - Push `START` and place the phone on the support.
-- Record as many traks as needed by repeating the above steps.
+- Record as many tracks as needed by repeating the above steps.
 - Once the recording is terminated, connect the smartphone to a computer and download the data.
 
 ## Tips
-For consecutive recordings in which the parameters do not change, use a bluetooth remote control to trigger the data acquisition.</br>
+For consecutive recordings in which the parameters do not change, use a Bluetooth remote control to trigger the data acquisition.</br>
 If the inputted acquisition time is too long, a `STOP` button can be triggered to end the acquisition process.
