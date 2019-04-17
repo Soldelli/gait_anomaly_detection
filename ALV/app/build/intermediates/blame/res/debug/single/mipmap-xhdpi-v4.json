@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
+        "source": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
         "merged": "/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/res/merged/debug/mipmap-xhdpi-v4/ic_launcher.png",
         "source": "/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     }

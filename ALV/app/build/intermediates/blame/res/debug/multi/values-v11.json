@@ -392,5 +392,399 @@
                 }
             }
         ]
+    },
+    {
+        "outputFile": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/res/merged/debug/values-v11/values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 469
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 470
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 474,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 894
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 476,
+                        "endLine": 15,
+                        "endColumn": 12,
+                        "endOffset": 896
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 899,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 1322
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 902,
+                        "endLine": 22,
+                        "endColumn": 12,
+                        "endOffset": 1325
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1327,
+                    "endLine": 25,
+                    "endColumn": 12,
+                    "endOffset": 1748
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 1331,
+                        "endLine": 29,
+                        "endColumn": 12,
+                        "endOffset": 1752
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 26,
+                    "startColumn": 4,
+                    "startOffset": 1753,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 2169
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 31,
+                        "startColumn": 4,
+                        "startOffset": 1758,
+                        "endLine": 36,
+                        "endColumn": 12,
+                        "endOffset": 2174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 32,
+                    "startColumn": 4,
+                    "startOffset": 2174,
+                    "endLine": 37,
+                    "endColumn": 12,
+                    "endOffset": 2604
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2180,
+                        "endLine": 43,
+                        "endColumn": 12,
+                        "endOffset": 2610
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 38,
+                    "startColumn": 4,
+                    "startOffset": 2609,
+                    "endLine": 43,
+                    "endColumn": 12,
+                    "endOffset": 3037
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 45,
+                        "startColumn": 4,
+                        "startOffset": 2616,
+                        "endLine": 50,
+                        "endColumn": 12,
+                        "endOffset": 3044
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 44,
+                    "startColumn": 4,
+                    "startOffset": 3042,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 3484
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 52,
+                        "startColumn": 4,
+                        "startOffset": 3050,
+                        "endLine": 57,
+                        "endColumn": 12,
+                        "endOffset": 3492
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3489,
+                    "endColumn": 77,
+                    "endOffset": 3562
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 59,
+                        "startColumn": 4,
+                        "startOffset": 3498,
+                        "endColumn": 78,
+                        "endOffset": 3572
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 51,
+                    "startColumn": 4,
+                    "startOffset": 3567,
+                    "endColumn": 91,
+                    "endOffset": 3654
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 61,
+                        "startColumn": 4,
+                        "startOffset": 3578,
+                        "endColumn": 92,
+                        "endOffset": 3666
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 52,
+                    "startColumn": 4,
+                    "startOffset": 3659,
+                    "endColumn": 89,
+                    "endOffset": 3744
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 63,
+                        "startColumn": 4,
+                        "startOffset": 3672,
+                        "endColumn": 90,
+                        "endOffset": 3758
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3749,
+                    "endLine": 148,
+                    "endColumn": 12,
+                    "endOffset": 10473
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 65,
+                        "startColumn": 4,
+                        "startOffset": 3764,
+                        "endLine": 160,
+                        "endColumn": 12,
+                        "endOffset": 10488
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 149,
+                    "startColumn": 4,
+                    "startOffset": 10478,
+                    "endColumn": 94,
+                    "endOffset": 10568
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 162,
+                        "startColumn": 4,
+                        "startOffset": 10494,
+                        "endColumn": 101,
+                        "endOffset": 10591
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 150,
+                    "startColumn": 4,
+                    "startOffset": 10573,
+                    "endColumn": 116,
+                    "endOffset": 10685
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 164,
+                        "startColumn": 4,
+                        "startOffset": 10597,
+                        "endColumn": 123,
+                        "endOffset": 10716
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 151,
+                    "startColumn": 4,
+                    "startOffset": 10690,
+                    "endLine": 155,
+                    "endColumn": 12,
+                    "endOffset": 11049
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 166,
+                        "startColumn": 4,
+                        "startOffset": 10722,
+                        "endLine": 170,
+                        "endColumn": 12,
+                        "endOffset": 11081
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 156,
+                    "startColumn": 4,
+                    "startOffset": 11054,
+                    "endLine": 201,
+                    "endColumn": 12,
+                    "endOffset": 14686
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 172,
+                        "startColumn": 4,
+                        "startOffset": 11087,
+                        "endLine": 217,
+                        "endColumn": 12,
+                        "endOffset": 14719
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 202,
+                    "startColumn": 4,
+                    "startOffset": 14691,
+                    "endLine": 247,
+                    "endColumn": 12,
+                    "endOffset": 18337
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 219,
+                        "startColumn": 4,
+                        "startOffset": 14725,
+                        "endLine": 264,
+                        "endColumn": 12,
+                        "endOffset": 18371
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 248,
+                    "startColumn": 4,
+                    "startOffset": 18342,
+                    "endLine": 294,
+                    "endColumn": 12,
+                    "endOffset": 22113
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 266,
+                        "startColumn": 4,
+                        "startOffset": 18377,
+                        "endLine": 312,
+                        "endColumn": 12,
+                        "endOffset": 22148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 295,
+                    "startColumn": 4,
+                    "startOffset": 22118,
+                    "endLine": 341,
+                    "endColumn": 12,
+                    "endOffset": 25903
+                },
+                "from": {
+                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-v11/values.xml",
+                    "position": {
+                        "startLine": 314,
+                        "startColumn": 4,
+                        "startOffset": 22154,
+                        "endLine": 360,
+                        "endColumn": 12,
+                        "endOffset": 25939
+                    }
+                }
+            }
+        ]
     }
 ]

@@ -21,7 +21,7 @@ Check that folder for more details about the files.
 
 ## Instructions
 The first time you run the code you MUST follow these steps:</br></br>
-**1 - Prepare the data:** This operation will prepare the data for the training opeations that come after.
+**1 - Prepare the data:** This operation will prepare the data for the training operations that come after.
 ```bash
 python data_utils.py 
 ```
@@ -33,7 +33,7 @@ python bidirectional_autoencoder.py
 ```bash
 python conv_classifier.py
 ```
-**4 - Perform classification:** This step perform the classification operation on novel data, the test set.
+**4 - Perform classification:** This step performs the classification operation on novel data, the test set.
 ```bash
 python sequence_classification_app 
 ```
