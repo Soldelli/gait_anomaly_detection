@@ -15,9 +15,9 @@ TBD when paper is accepted
 
 ## Project structure
 The folder are organized as follows:
-- `/Data/` contains all recorded gait sequences used for training and testing of the proposed network.
-- `/Software/ALV/` contains the android application **ActivityLoggerVideo** used for the data collection.
-- `/Software/Seq2Seq-gait-analysis/` contains the inference code and details on how to use it.
+- `ALV/` contains the android application **ActivityLoggerVideo** used for the data collection.
+- `Seq2Seq-gait-analysis/` contains the inference code and details on how to use it.
+- `Seq2Seq-gait-analysis/Data/` is a placeholder for the preprocessed gait sequences used for training and testing of the proposed network. Check the `Seq2Seq-gait-analysis/README.md` for more details.
 </br>
 
 **Check each folder's README for more details**.
