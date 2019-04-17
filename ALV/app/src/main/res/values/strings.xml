@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ActivityLoggerVideo</string>
+     <string name="last_name">Name</string>
+     <string name="send_data">Send data to our server</string>
+    <string name="del_all_data">Delete all data</string>
+
+     <string-array name="activities">
+         <item>Walking</item>
+         <item>Running</item>
+         <item>Driving</item>
+         <item>Still</item>
+         <item>Sitting</item>
+         <item>Talking</item>
+         <item>Lying</item>
+         <item>Sleeping</item>
+         <item>Up stairs</item>
+         <item>Down stairs</item>
+         <item>Phone call</item>
+         <item>Cycling</item>
+         <item>Eating</item>
+         <item>Typing</item>
+         <item>PC Working</item>
+         <item>Fall</item>
+     </string-array>
+
+ </resources>
