@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="95fd37732ec852e99f07eeb516a3650172f1d136">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-21.0.0_cbfa9441132afc7710b85d840b14884fca29f03b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-21.0.0_8fbb93bfa55687290aa8be81c41b10be92aa96ec/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4a76596f08ebb7fdce81ef9f42df9af00005d0c2">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d21fb90327926dd35b7b1df2c298dc86f9d5a061/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8abd5dfc59103d48e32c6523a0fd6f907883fcac">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d76e901f01d1e54bfc570f5b4aed0f7a7d086a5e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/jars/libs/internal_impl-21.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-21.0.0_48562d068a9b19d8c0178f54d458db3c93eab677/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/libs/commons-net-3.3.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="cd0d5510908225f76c5fe5a3f1df4fa44866f81e">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/2/commons-net-3.3_277aedbdbfc597bd5b6bc41d8ddb0899791579df/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Mattia/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
+        <dex dex="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-21.0.0_517ceab4020ec474cdd4e5911fe849d42c27cc9d/classes.dex" />
+    </item>
+
+</items>
