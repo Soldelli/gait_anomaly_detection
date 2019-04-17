@@ -12,7 +12,7 @@ To install this application on a smartphone follow these steps:
 - Clic on the green play button and when asked select the smatphone as testing devide. This will install the application on the smartphone.
 
 ## Usage
-![screenshot](https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/Screenshot_app.png | width=100)
+![screenshot](https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/Screenshot_app.png)
 
 One che application is installed you can start recording gait cicles.
 
