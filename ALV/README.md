@@ -17,7 +17,7 @@ To install this application on a smartphone follow these steps:
 <img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/chest_support.jpg" width="300" height="450" hspace="50">
 </p>
 
-One che application is installed you can start recording gait cicles.
+Once the application is installed it is possible to start recording gait cicles.
 
 - Open the application and input the required information 
     - `Name` of the user
