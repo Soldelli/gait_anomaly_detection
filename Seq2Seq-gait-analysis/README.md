@@ -31,7 +31,7 @@ python bidirectional_autoencoder.py
 ```
 **3 - Train the CNN classifier:**
 ```bash
-python conv_classifier.py
+python conv_classifier_eval.py
 ```
 **4 - Perform classification:** This step performs the classification operation on novel data, the test set.
 ```bash

@@ -20,7 +20,7 @@ import numpy as np
 
 np.random.seed(seed=42)
 
-BIG = True
+BIG = False
 
 """
 Just paths definitions
@@ -105,5 +105,8 @@ if __name__ == '__main__':
 	write_np_dataset_to_disk(dataset = class_labels, 
 		dest_fname = classifier_l_fname)
 
+	df = load_original_data(fname = original_filename)
+	write_np_dataset_to_disk(dataset = build_np_dataset(df), 
+		dest_fname = np_data_fname)
 
 
