@@ -17,11 +17,11 @@ To install this application on a smartphone follow these steps:
 <img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/chest_support.jpg" width="300" height="450" hspace="50">
 </p>
 
-Once the application is installed it is possible to start recording gait cycles.s
+Once the application is installed it is possible to start recording gait cycles.
 
 - Open the application and input the required information 
-    - `Name` of the user
-    - `Type` of activity
+    - `Name` of the user.
+    - `Type` of activity.
     - Keep `camera enabled` if you are planning to test our inference model.
     - Write any kind of `note` if needed, i.e. the kind of impairment movement you might want to mimic.
     - Select the `Start delay`: the amount of time (in seconds) the acquisitions process will be delayed after pressing the recording button. This gives the user the time to correctly place the smartphone on the ad-hoc made chest support.

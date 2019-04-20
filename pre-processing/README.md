@@ -22,9 +22,9 @@ conda activate gait_analysis
 ```
 
 ## MATLAB integration
-Several of the functions used in this part of the projects have been implemented in MATLAB. To run the code it is mandatory that a version of MATLAB R2014b or later is installed on the machine you want to use the code in.</br>
+Several of the functions used in this part of the project have been implemented in MATLAB. To run the code it is mandatory that a version of MATLAB R2014b or later is installed on the machine you want to use.</br>
 
-Follow these steps to set up the **MATLAB Engine API for Python** ([source](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)):
+After installing a valid version of MATLAB, follow these steps to set up the **MATLAB Engine API for Python** ([source](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)):
 
 - At a Windows operating system prompt: 
 ```bash

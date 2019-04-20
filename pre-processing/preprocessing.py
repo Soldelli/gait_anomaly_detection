@@ -31,8 +31,7 @@ import numpy as np
 from utils import *
 from pathlib import Path
 from sklearn import preprocessing
-sys.path.append(os.path.abspath("pre-processing/camera_tracking/"))
-print(os.path.abspath("pre-processing/camera_tracking/"))
+#sys.path.append(os.path.abspath("pre-processing/camera_tracking/"))
 from camera_tracking import camera_tracking
 
 import matplotlib
