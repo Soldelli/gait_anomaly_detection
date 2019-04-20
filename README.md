@@ -12,6 +12,8 @@ If you find any piece of code valuable for your research please cite this work:<
 TBD when the paper is accepted 
 ```
 
+And don't forget to give us a :star: in the github banner :wink:.
+
 ## Project structure
 The folders are organized as follows:
 - `ALV/` contains the Android application **ActivityLoggerVideo** used for the data collection.
