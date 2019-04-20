@@ -154,6 +154,15 @@ def preprocessing_y(**kwargs):
     The implemented procedure is explained in the Rochester paper, 
     provided with the documentation.
     """
+    
+    Fs_prime = kwargs['Fs_prime']
+    visualize = kwargs['visualize']
+    sig0 = kwargs['sig0']
+    sig1 = kwargs['sig1']
+    sig_cycles = kwargs['sig_cycles']
+    sig_timestamp0 = kwargs['sig_timestamp0']
+    sig_timestamp1 = kwargs['sig_timestamp1']
+    cycles_timestamp = kwargs['cycles_timestamp']
 
     sig_prime0, sig_timestamp_prime0 = interpolation(sig0, sig_timestamp0, Fs_prime)
     sig_prime1, sig_timestamp_prime1 = interpolation(sig1, sig_timestamp1, Fs_prime)
@@ -193,9 +202,9 @@ def preprocessing_y(**kwargs):
     index_values = ICleft.astype(int)
     fixed_length = Fs_prime  # lenght of each cycle
 
-    args = {'sig_cycles':sig_cycles, 
-            'cycles_timestamp':cycles_timestamp, 
-            'index_values':index_value, 
+    args = {'input':sig_cycles, 
+            'timestamp':cycles_timestamp, 
+            'index_values':index_values, 
             'fixed_length':fixed_length, 
             'Fs_prime':Fs_prime
             }
@@ -252,6 +261,13 @@ def interpolation(input, tstamp, Fs_prime):
 
 
 def cycles_extraction(**args):
+
+    input = args['input']
+    timestamp = args['timestamp']
+    index_values = args['index_values']
+    fixed_length = args['fixed_length'] 
+    Fs_prime = args['Fs_prime']
+
     """This function performs the interpolation procedure, filtering of data and cycle extraction."""
     # Interpolation
     input_prime, timestamp_prime0 = interpolation(input, timestamp, Fs_prime)
@@ -295,11 +311,19 @@ def stance_swing_time(ICs, FCs, Fs):
 
 
 def step_vel(**kwargs):
+
+    l = kwargs['l']
+    Fs = kwargs['Fs']
+    IC = kwargs['IC']
+    index = kwargs['index']
+    acc_y = kwargs['acc_y']
+    acc_tstamp = kwargs['acc_tstamp']
+
     ICstart = np.where(IC == index[0])[0]
     ICend = np.where(IC == index[-1])[0]
 
     ICvel = IC[ICstart[0]: (ICend[0] + 1)]
-    acc_y_interp, _ = interpolation(acc_y, acc_timestamp, Fs)
+    acc_y_interp, _ = interpolation(acc_y, acc_tstamp, Fs)
     cutOff = 0.7  # high pass filter per eliminare drift in integrazione
 
     y_space = eng.space(matlab.double(acc_y_interp.tolist()), 
@@ -478,7 +502,7 @@ def data_inspection(acquisition, rescale, vis):
                                             .format(acquisition,time.time()-t))
 
 
-def video_flattening(video_vectors, cycles_per_acquisition):
+def video_flattening(video_vectors, cycles_per_acquisition, Fs_prime):
     t = time.time()
     ppc            = 1                 # points per cycle
     f_points       = np.zeros(shape=(video_vectors.shape[0], ppc * video_vectors.shape[1]//Fs_prime +len(cycles_per_acquisition)), dtype=float)

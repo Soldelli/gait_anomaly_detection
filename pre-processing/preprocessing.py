@@ -24,12 +24,15 @@ DEPENDENCIES:
 """
 
 import os
+import sys
 import csv
 import time
 import numpy as np
 from utils import *
 from pathlib import Path
 from sklearn import preprocessing
+sys.path.append(os.path.abspath("pre-processing/camera_tracking/"))
+print(os.path.abspath("pre-processing/camera_tracking/"))
 from camera_tracking import camera_tracking
 
 import matplotlib
@@ -90,8 +93,8 @@ if __name__ == '__main__':
 
             args = {'Fs_prime':Fs_prime,
                     'visualize':VISUALIZE,
-                    'sig0':data['acc_y[i]'],
-                    'sig1':data['gyro_y[i]'],
+                    'sig0':data['acc_y'][i],
+                    'sig1':data['gyro_y'][i],
                     'sig_cycles':data['acc_x'][i],
                     'sig_timestamp0':data['acc_tstamp'][i],
                     'sig_timestamp1':data['gyro_tstamp'][i],
@@ -117,7 +120,7 @@ if __name__ == '__main__':
         
                 tstamp_type = np.repeat(np.array([data['acc_tstamp'][i],
                                                   data['gyro_tstamp'][i],
-                                                  data['frame_tstamp[i]']]), 3)
+                                                  data['frame_tstamp'][i]]), 3)
                 input_names = ['acc_x', 'acc_y', 'acc_z', 
                                'gyro_x', 'gyro_y', 'gyro_z',
                                'thx', 'thy', 'thz']
@@ -148,11 +151,10 @@ if __name__ == '__main__':
 
             # step velocity computation
             args = {'IC':IC,
-                    'counter':i,
                     'Fs':Fs_prime,
                     'l':leg_length,
                     'index':index_value,
-                    'acc_y':data['acc_y[i]'],
+                    'acc_y':data['acc_y'][i],
                     'acc_tstamp':data['acc_tstamp'][i],
                     }
             mean_step_velocity = step_vel(**args)
@@ -161,7 +163,7 @@ if __name__ == '__main__':
             #print('Swing: ', swing_time)
             #print('Step velocity: ' , mean_step_velocity)
 
-            if VISUALIZATION:
+            if VISUALIZE:
                 args = {'msv':mean_step_velocity, 
                         'st_time':stance_time, 
                         'sw_time':swing_time, 
@@ -194,7 +196,7 @@ if __name__ == '__main__':
                     os.makedirs(save_data + str(i + 1))
 
                 for h in range(len(cycles_temp)):
-                    if VISUALIZATION and (h % 5) == 0:
+                    if VISUALIZE and (h % 5) == 0:
                         args = {'save_fig_preproc':save_fig_preproc,
                                 'cycles_temp':cycles_temp,
                                 'name':name,
@@ -209,8 +211,7 @@ if __name__ == '__main__':
             total_cycles.append(preprocessed_data)
             cycles_per_acquisition[i] = len(preprocessed_data[0]) // Fs_prime
             k += 1
-            print('Preprocessing acquisition {:02d} of {} executed in {0:.2f} seconds.'\
-                    .format(i + 1, num_acquisitions, time.time()-time_preproc))
+            print('Preprocessing acquisition {:02d} of {:02d} executed in {:0.2f} seconds.'.format(i + 1, num_acquisitions, time.time()-time_preproc))
         else:
             already_preprocessed += 1
         if already_preprocessed == num_acquisitions:
@@ -218,7 +219,7 @@ if __name__ == '__main__':
     print()
 
     # Elimination of old variables
-    del data, IC, ICleft, ICright, FC, row_data, cycles_temp, input_type, tstamp_type
+    #del data, IC, ICleft, ICright, FC, row_data, cycles_temp, input_type, tstamp_type
     """ Last step -- Normalization procedure, in this section the mean is removed from the data and then data 
     is divided by the standard deviation."""
 
@@ -226,7 +227,8 @@ if __name__ == '__main__':
 
     if num_channels == 9 and video_trick:
         final_matrix[6:, :] = video_flattening(final_matrix[6:, :],
-                                               cycles_per_acquisition)
+                                               cycles_per_acquisition,
+                                               Fs_prime)
 
     final_matrix = preprocessing.scale(final_matrix, axis=1)
 
@@ -257,24 +259,26 @@ if __name__ == '__main__':
                 np.sort(np.where(final_matrix[i] == 1.0)) / Fs_prime)
         else:
             index_min = int(
-                np.sort(np.where(final_matrix[i] == min[i])) / Fs_prime)
+                np.sort(np.where(final_matrix[i] == min[i]))[0][0] / Fs_prime)
             index_max = int(
-                np.sort(np.where(final_matrix[i] == max[i])) / Fs_prime)
+                np.sort(np.where(final_matrix[i] == max[i]))[0][0] / Fs_prime)
 
         ii = 0
         while index_min > temp[ii]:
             ii += 1
-        print('Acquisition (min) {} for signal {}'.format(ii + 1, input_names[i]))
+        print('Min for signal {} found in acquisition {}'.format(input_names[i],ii + 1))
         ii = 0
         while index_max > temp[ii]:
             ii += 1
-        print('Acquisition (max) {} for signal {}'.format(ii + 1, input_names[i]))
+        print('Max for signal {} found in acquisition {}\n'.format(input_names[i],ii + 1))
     print()
 
+    print('Dumping final_matrix.csv')
     with open('./data/preprocessed_data/final_matrix.csv','w') as file:
         wr = csv.writer(file, quoting=csv.QUOTE_ALL)
         wr.writerows(final_matrix)
 
+    print('Dumping cycles_per_acquisition.csv')
     with open('./data/preprocessed_data/cycles_per_acquisition.csv','w') as file:
         wr = csv.writer(file, quoting=csv.QUOTE_ALL)
         wr.writerow(cycles_per_acquisition)

@@ -44,7 +44,7 @@ cd (fullfile(matlabroot,'extern','engines','python'))
 system('python setup.py install')
 ```
 
-NB: Administrative privileges might be needed to execute these commands. Tested on MacBook Pro with MATLAB R2018a and R2017b.
+NB: Administrative privileges might be needed to execute these commands. Tested on MacBook Pro with MATLAB R2019a and R2017b.
 
 For more info visit the official [documentation](https://www.mathworks.com/help/matlab/matlab-engine-for-python.html).
 
@@ -54,7 +54,7 @@ If you want to try out your data follow these steps:
 - Download the recorded data from the smartphone to the folder `./data/raw_data/`. There should be one folder for each acquisition. NB: The ALV application takes care of creating unique folder identifiers ordered according to the date and time, therefore there is no need for renaming.
 - Run the preprocessing script:
 ```bash
-python data_utils.py 
+python preprocessing.py 
 ```
 - The procedure will create, in the folder `./data/preprocessed_data/`:
     - One folder for each recorded activity with preprocessed data for that acquisition.

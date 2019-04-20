@@ -138,8 +138,7 @@ def camera_tracking(force):
         input_video = sys.argv[1]
 
     # retrieve path where to find data
-    head_path = os.path.abspath("camera_tracking.py")
-    video_path = head_path[0:head_path.rfind('Code')] + "data/raw_data/**/*.mp4"
+    video_path = "./data/raw_data/**/*.mp4"
 
     num_dir = 0
     current_dir = 0
