@@ -16,8 +16,7 @@ The folders are organized as follows:
 - `ALV/` contains the Android application **ActivityLoggerVideo** used for the data collection.
 - `pre-processing` contain the scripts to apply the preprocessing tranformations of the signals described in the paper. It is the necessary data preparation step for the later use in the deep learning framework.
 - `Seq2Seq-gait-analysis/` contains the inference code and details on how to use it.
-- `Seq2Seq-gait-analysis/Data/` is a placeholder for the preprocessed gait sequences used for training and testing of the proposed network. Check the `Seq2Seq-gait-analysis/README.md` for more details.
-</br>
+- `Seq2Seq-gait-analysis/Data/` is a placeholder for the preprocessed gait sequences used for training and testing of the proposed network. </br>
 
 **Check each folder's README for more details**.
 
