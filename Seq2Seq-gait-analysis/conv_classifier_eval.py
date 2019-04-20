@@ -35,7 +35,7 @@ import data_utils as du
 # 321 batches of size 16
 # 10 epochs more or less
 #STEPS = 3250
-STEPS = 1 #10000
+STEPS = 10000
 
 
 #batch_size = bd.batch_size

@@ -3,41 +3,57 @@ In this folder can be found the inference scripts that analyze the collected dat
 
 ## Getting started 
 Our project takes advantage of Anaconda to create virtual environments to run the code.</br>
-1 - Download and install [Anaconda](https://www.anaconda.com/distribution/#download-section).</br>
-2 - Create the environment:
+1. Download and install [Anaconda](https://www.anaconda.com/distribution/#download-section).</br>
+2. Create the environment:
 ```bash
 conda env create -n gait_analysis -f gait_analysis.yml
 ```
-3 - Activate the environment:
+3. Activate the environment:
 ```bash
 conda activate gait_analysis 
 ```
 
 ## Data
+### Paper's data
 Download the preprocessed data from this [link](https://drive.google.com/open?id=1Bw7bP53lxut0pTpHY35zL2dm6wXRkSV3).</br>
 Unpack the downloaded zip and move the content into the folder `./data/`.</br>
 Check that folder for more details about the files.
 
+### Your data
+If you are planning to use the data the you collected and on which you already applied the preprocessing procedure, simply copy the `final_matrix.csv` in the folder `./data/` or create a symlink to the file as follows:
+
+- At a Windows operating system prompt: 
+```bash
+cd ./data/
+mklink /H ../../pre-processing/data/preprocessed_data/final_matrix.csv
+```
+
+- At a macOS or Linux operating system prompt: 
+```bash
+cd ./data/
+ln -s ../../pre-processing/data/preprocessed_data/final_matrix.csv ./final_matrix.csv
+```
+
 
 ## Instructions
 The first time you run the code you MUST follow these steps:</br></br>
-**1 - Prepare the data:** This operation will prepare the data for the training operations that come after.
+**1. Prepare the data:** This operation will prepare the data for the training operations that come after.
 ```bash
 python data_utils.py 
 ```
-**2 - Train the Seq2Seq encoder-decoder model:** It is recommended to perform this operation on a GPU to reduce the computational time to complete the step.
+**2. Train the Seq2Seq encoder-decoder model:** It is recommended to perform this operation on a GPU to reduce the computational time to complete the step.
 ```bash
 python bidirectional_autoencoder.py 
 ```
-**3 - Train the CNN classifier:**
+**3. Train the CNN classifier:**
 ```bash
 python conv_classifier_eval.py
 ```
-**4 - Perform classification:** This step performs the classification operation on novel data, the test set.
+**4. Perform classification:** This step performs the classification operation on novel data, the test set.
 ```bash
 python sequence_classification_app 
 ```
-**5 - (OPTIONAL) Train the baseline model:**  SVM model.
+**5. (OPTIONAL) Train the baseline model:**  SVM model.
 ```bash
 python svm_classifier.py 
 ```
