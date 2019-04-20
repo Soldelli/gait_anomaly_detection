@@ -1,5 +1,5 @@
 # Preprocessing Code
-The code in this folder provides the toold to preprocess the raw signals recorded though the smartphone application in order to use them with the deep learning framework. </br>
+The code in this folder provides the tool to preprocess the raw signals recorded through the smartphone application in order to use them with the deep learning framework. </br>
 
 The operations involved in the preprocessing are:
 - Visual flow computation from video data.
@@ -22,9 +22,9 @@ conda activate gait_analysis
 ```
 
 ## MATLAB integration
-Several of the functions used in this part of the projects have been implemented in MATLAB. To run the conde it is mandatory that a version of MATLAB R2014b or later is installed on the machine you want to use the code in.</br>
+Several of the functions used in this part of the projects have been implemented in MATLAB. To run the code it is mandatory that a version of MATLAB R2014b or later is installed on the machine you want to use the code in.</br>
 
-Follow these steps to setup the **MATLAB Engine API for Python** ([source](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)):
+Follow these steps to set up the **MATLAB Engine API for Python** ([source](https://www.mathworks.com/help/matlab/matlab_external/install-the-matlab-engine-for-python.html)):
 
 - At a Windows operating system prompt: 
 ```bash
@@ -60,7 +60,7 @@ python data_utils.py
     - One folder for each recorded activity with preprocessed data for that acquisition.
     - A csv file, `final_matrix.csv`, with the information from all the acquisitions.
     - A csv file, `cycles_per_acquisition.csv`, with the number of gait cycles for each acquisition.
-    - A file containing a set of scaler to apply to future new data for normalization purpose.
+    - A file containing a set of scalar to apply to future new data for normalization purpose.
 
 ## What's more? Visualizations!
 The script is filled with (by default disabled) visualization routines for gaining more insight on the data. 

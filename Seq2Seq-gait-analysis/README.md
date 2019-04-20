@@ -20,7 +20,7 @@ Unpack the downloaded zip and move the content into the folder `./data/`.</br>
 Check that folder for more details about the files.
 
 ### Your data
-If you are planning to use the data the you collected and on which you already applied the preprocessing procedure, simply copy the `final_matrix.csv` in the folder `./data/` or create a symlink to the file as follows:
+If you are planning to use the data that you collected and on which you already applied the preprocessing procedure, simply copy the `final_matrix.csv` in the folder `./data/` or create a symlink to the file as follows:
 
 - At a Windows operating system prompt: 
 ```bash
