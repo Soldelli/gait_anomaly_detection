@@ -1,0 +1,50 @@
+name: preprocessing
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - blas=2.5=openblas
+  - ca-certificates=2019.1.23=0
+  - certifi=2018.8.24=py35_1
+  - cycler=0.10.0=py_1
+  - freetype=2.7=1
+  - intel-openmp=2019.3=199
+  - libblas=3.8.0=5_openblas
+  - libcblas=3.8.0=5_openblas
+  - libcxx=4.0.1=hcfea43d_1
+  - libcxxabi=4.0.1=hcfea43d_1
+  - libgfortran=3.0.1=0
+  - liblapack=3.8.0=5_openblas
+  - liblapacke=3.8.0=5_openblas
+  - libopenblas=0.3.3=hdc02c5d_3
+  - libpng=1.6.37=h2573ce8_0
+  - matplotlib=2.0.2=py35_2
+  - mkl=2019.3=199
+  - ncurses=5.9=10
+  - numpy=1.15.2=py35h926163e_0
+  - numpy-base=1.15.2=py35ha711998_0
+  - openblas=0.3.5=h436c29b_1001
+  - openssl=1.0.2r=h1de35cc_0
+  - pandas=0.20.3=py35h5e2f206_2
+  - pathlib=1.0.1=py_1
+  - pip=18.0=py35_1001
+  - pyparsing=2.4.0=py_0
+  - python=3.5.2=5
+  - python-dateutil=2.8.0=py_0
+  - pytz=2019.1=py_0
+  - readline=6.2=0
+  - scikit-learn=0.19.0=py35hd036984_2
+  - scipy=0.19.1=py35hf362045_3
+  - setuptools=40.4.3=py35_0
+  - six=1.11.0=py35_1
+  - sqlite=3.13.0=1
+  - tk=8.5.19=2
+  - tornado=5.1.1=py35h470a237_0
+  - wheel=0.32.0=py35_1000
+  - xz=5.2.4=h1de35cc_1001
+  - zlib=1.2.11=h1de35cc_1004
+  - pip:
+    - matlabengineforpython==R2018a
+prefix: /Users/Mattia/anaconda3/envs/preprocessing
+

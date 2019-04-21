@@ -14,11 +14,11 @@ Our project takes advantage of Anaconda to create virtual environments to run th
 1. Download and install [Anaconda](https://www.anaconda.com/distribution/#download-section).</br>
 2. Create the environment:
 ```bash
-conda env create -n gait_analysis -f gait_analysis.yml
+conda env create -n preprocessing -f preprocessing.yml
 ```
 3. Activate the environment:
 ```bash
-conda activate gait_analysis 
+conda activate preprocessing 
 ```
 
 ## MATLAB integration

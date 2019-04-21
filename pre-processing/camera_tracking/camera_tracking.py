@@ -169,12 +169,12 @@ def camera_tracking(force):
 
             # Take first two useful frames and extract keypoints
 
-            cap.set(1, toKeep[counter]);
+            cap.set(1, toKeep[counter])
             counter += 1
             ret, old_frame0 = cap.read()
             old_frame0 = calibration(old_frame0, mtx, dist)
 
-            cap.set(1, toKeep[counter]);
+            cap.set(1, toKeep[counter])
             counter += 1
             ret, old_frame1 = cap.read()
             old_frame1 = calibration(old_frame1, mtx, dist)
