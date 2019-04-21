@@ -64,11 +64,18 @@ locsIC = locsIC(locsIC~=0);
 
 if visualize
     % plot
-    figure; plot(in_detrend,'k'); hold on; plot(gcwt1,'k--'); hold on; plot(gcwt2,'k-.'); ...
-        hold on; plot(locsIC, gcwt1(locsIC),'ko','MarkerSize',15); hold on; plot(locsFC, gcwt2(locsFC),'k^','MarkerSize',15);
+    min = 1000;      %1000         %1
+    max = 2000;    %2000         %700
+    min1= 8;      % 8 pe        %1
+    max1= 15;      % 15 per      %5
+    figure;  plot(min:1:max, in_detrend(min:max),'k'); 
+    hold on; plot(min:1:max, gcwt1(min:max),'k--','Color','red'); 
+    hold on; plot(min:1:max, gcwt2(min:max),'k-.','Color','blue'); ...
+    hold on; plot(locsIC(min1:max1), gcwt1(locsIC(min1:max1)),'ko','MarkerSize',5,'Color','red'); 
+    hold on; plot(locsFC(min1:max1), gcwt2(locsFC(min1:max1)),'k^','MarkerSize',5,'Color','blue');
+    
     legend('detrended input','1st gcwt', '2nd gcwt', 'IC', 'FC', 'Location', 'SouthEast');
     ylabel('m/s^2'); xlabel('samples');
-    
-    set(findall(gcf,'-property','FontSize'),'FontSize', 25);
+    set(findall(gcf,'-property','FontSize'),'FontSize', 10);
 end
 

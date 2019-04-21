@@ -25,8 +25,9 @@ end
 
 % Plot
 if visualize
-    figure; plot(in_filt, 'k'); hold on; plot(ICleft, in_filt(ICleft), 'ko'); ...
-        hold on; plot(ICright, in_filt(ICright), 'k^');
+    figure; plot(5000:1:7000, in_filt(5000:7000), 'k'); 
+    hold on; plot(ICleft(20:28), in_filt(ICleft(20:28)), 'ko'); ...
+    hold on; plot(ICright(21:28), in_filt(ICright(21:28)), 'k^');
         xlabel('samples');
         ylabel('deg/s');
     legend('2Hz-filtered + detrended input', 'ICleft', 'ICright', 'Location', 'SouthEast');

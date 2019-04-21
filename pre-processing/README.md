@@ -54,10 +54,10 @@ If you want to try out your data follow these steps:
 - Download the recorded data from the smartphone to the folder `./data/raw_data/`. There should be one folder for each acquisition. NB: The ALV application takes care of creating unique folder identifiers ordered according to the date and time, therefore there is no need for renaming.
 - Run the preprocessing script:
 ```bash
-python preprocessing.py 
+python preprocessing.py --folder raw_data
 ```
-**NB:** The first time you run the code on raw data the process will extract flow for every video, this part of the procedure is usually time consuming. KEEP CALM and plan your next vacation :surfer:.  </br>
-**Tip:** select `force=False` on the `preprocessing.py` script to avoid extracting the flow multiple time. If 
+**NB:** The first time you run the code on raw data the process will extract flow for every video, this part of the procedure is usually time consuming. KEEP CALM and in the meantime plan your next vacation :surfer:.  </br>
+**Tip:** select `force=False` on the `preprocessing.py` script to avoid extracting the flow multiple times.  
 - The procedure will create, in the folder `./data/preprocessed_data/`:
     - One folder for each recorded activity with preprocessed data for that acquisition.
     - A csv file, `final_matrix.csv`, with the information from all the acquisitions.

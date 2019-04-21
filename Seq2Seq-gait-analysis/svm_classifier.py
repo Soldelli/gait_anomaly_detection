@@ -17,7 +17,7 @@ DEPENDENCIES:
 
 """
 
-
+import os
 import numpy as np 
 from sklearn.externals import joblib
 from sklearn import svm 
@@ -51,6 +51,8 @@ def fit_svm(svm_object, train_data, train_labels):
 	return svm_object.fit(train_data, train_labels)
 
 def save_fit_model(fit_svm_object, dest_fname = './svm/svm.pkl'):
+	if not os.path.exists('./svm/'):
+		os.makedirs('./svm/')
 	joblib.dump(fit_svm_object, dest_fname)
 
 def load_fit_model(src_fname = './svm/svm.pkl'):

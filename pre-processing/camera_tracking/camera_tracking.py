@@ -1,19 +1,19 @@
 # coding: utf-8
 
+import os
 import sys
 import cv2
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import numpy as np
-import pandas as pd
 import math
-import scipy.io as sio
-from scipy import interpolate
-import os
 import glob
+import numpy as np
 import time as time
+import pandas as pd
+import scipy.io as sio
 from pathlib import Path
+
+import matplotlib
+#matplotlib.use('Agg')
+import matplotlib.pyplot as plt  
 
 # from mpl_toolkits.mplot3d import Axes3D
 
@@ -117,7 +117,7 @@ def postProc(n_frames, toKeep, inputz):
     return temp
 
 
-def camera_tracking(force):
+def camera_tracking(which_data, force):
     """This function is used to retrieve the information from the video inside data/raw_data
 
     Input: force is used to force extraction on all acquisition events (True--> extraction on all videos, False -->
@@ -132,20 +132,21 @@ def camera_tracking(force):
     plt.close("all")
 
     if len(sys.argv[1:]) < 1:
-        print(help_message)
+        #print(help_message)
+        pass
     # input_video = raw_input("\nChoose video file: ")
     else:  # input passato da riga di comando
         input_video = sys.argv[1]
 
     # retrieve path where to find data
-    video_path = "./data/raw_data/**/*.mp4"
+    video_path = './data/{}/**/*.mp4'.format(which_data)
+
 
     num_dir = 0
     current_dir = 0
     for filename in glob.glob(video_path):
         num_dir += 1
-    print("Total number of directory/video: " + str(num_dir))
-    print("")
+    print("Total number of directory/video: {}\n".format(num_dir))
     already_processed = 0
     for filename in glob.glob(video_path):
         current_dir += 1
@@ -154,7 +155,8 @@ def camera_tracking(force):
 
         if not (Path(deltafile).is_file()) or force:
             if already_processed != 0:
-                print("Video {} of {} already processed".format(already_processed,num_dir))
+                print('Video {} of {} already processed. '.format(already_processed,num_dir))
+                print('Proceding to process the remaining videos.')
                 already_processed = 0
             # Input video
             cap = cv2.VideoCapture(filename)
@@ -381,7 +383,7 @@ def camera_tracking(force):
             sio.savemat(filename[0:filename.rfind('/') + 1] + 'thy.mat', {'thy': thy_fin})
             sio.savemat(filename[0:filename.rfind('/') + 1] + 'thz.mat', {'thz': thz_fin})
             sio.savemat(filename[0:filename.rfind('/') + 1] + 't.mat', {'t_f': t_fin})
-            print("Video {} of {} processed in {0:.2f} s".format(current_dir,num_dir,time.time()-t))
+            print("Video " + str(current_dir) + " of " + str(num_dir) + " processed in " +"{0:.2f}".format(time.time()-t) + "s")
             # if not(VISUALIZE):
             # 	t_fin = np.array(t_fin)
             # 	t_fin.flatten()
@@ -399,5 +401,5 @@ def camera_tracking(force):
 if __name__ == '__main__':
     """The information extraction function can be launched in this stand alone program, or
     (as it is done in the preprocessing.py) can be imported for remote run."""
-    camera_tracking(force=False)
+    camera_tracking(which_data='./data/raw_data/', force=False)
 

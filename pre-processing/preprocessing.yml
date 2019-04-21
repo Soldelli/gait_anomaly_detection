@@ -10,6 +10,7 @@ dependencies:
   - cycler=0.10.0=py_1
   - freetype=2.7=1
   - intel-openmp=2019.3=199
+  - joblib=0.12.3=py35_0
   - libblas=3.8.0=5_hd44dcd8_netlib
   - libcblas=3.8.0=5_hd44dcd8_netlib
   - libcxx=4.0.1=hcfea43d_1
