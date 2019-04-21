@@ -41,7 +41,7 @@ import matplotlib.pyplot as plt  # import of package matplotlib.pyplot for plott
 save_fig_preproc = './images/preprocessing/preprocessed/acquisition_'
 save_data = './data/preprocessed_data/acquisition_'
 VISUALIZE = False                    # Enable visualization of several statistics
-force = True
+force = False
 rescale = False                      # Set to true to force rescaling of preprocessed data to [0-1] range.
 preprocessed_data_inspection = False # Set to true to produce pdf for visualization of preprocessed data.
 video_trick = True                   # Set to true if you want to remove the drift from video features
@@ -51,7 +51,7 @@ num_channels = 9  # if set to 6, video info are not involved in the procedure.
 if __name__ == '__main__':
     # Extraction of information regarding the video collected by 
     # the android app and placed in data/raw_data/* folders
-    camera_tracking.camera_tracking(force=False)  
+    camera_tracking.camera_tracking(force=force)  
 
     # Load of all raw data for preprocessing procedure  ----------------------------------------------------------------
     t = time.time()

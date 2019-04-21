@@ -56,6 +56,8 @@ If you want to try out your data follow these steps:
 ```bash
 python preprocessing.py 
 ```
+**NB:** The first time you run the code on raw data the process will extract flow for every video, this part of the procedure is usually time consuming. KEEP CALM and plan your next vacation :surfer:.  </br>
+**Tip:** select `force=False` on the `preprocessing.py` script to avoid extracting the flow multiple time. If 
 - The procedure will create, in the folder `./data/preprocessed_data/`:
     - One folder for each recorded activity with preprocessed data for that acquisition.
     - A csv file, `final_matrix.csv`, with the information from all the acquisitions.

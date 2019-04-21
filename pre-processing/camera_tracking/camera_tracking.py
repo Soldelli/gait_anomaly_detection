@@ -154,7 +154,7 @@ def camera_tracking(force):
 
         if not (Path(deltafile).is_file()) or force:
             if already_processed != 0:
-                print("Video " + str(already_processed) + " of " + str(num_dir) + " already processed")
+                print("Video {} of {} already processed".format(already_processed,num_dir))
                 already_processed = 0
             # Input video
             cap = cv2.VideoCapture(filename)
@@ -250,9 +250,14 @@ def camera_tracking(force):
             p0 = p1
 
             # Do the same for all other frames
+            previous = None
             while (counter < len(toKeep)):
                 cap.set(1, toKeep[counter])
                 ret, frame = cap.read()
+                if ret:
+                    previous = frame
+                else:
+                    frame = previous 
                 frame = calibration(frame, mtx, dist)
                 frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
                 # Tracks extracted features
@@ -376,7 +381,7 @@ def camera_tracking(force):
             sio.savemat(filename[0:filename.rfind('/') + 1] + 'thy.mat', {'thy': thy_fin})
             sio.savemat(filename[0:filename.rfind('/') + 1] + 'thz.mat', {'thz': thz_fin})
             sio.savemat(filename[0:filename.rfind('/') + 1] + 't.mat', {'t_f': t_fin})
-            print("Video " + str(current_dir) + " of " + str(num_dir) + " processed in " +"{0:.2f}".format(time.time()-t) + "s")
+            print("Video {} of {} processed in {0:.2f} s".format(current_dir,num_dir,time.time()-t))
             # if not(VISUALIZE):
             # 	t_fin = np.array(t_fin)
             # 	t_fin.flatten()
