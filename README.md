@@ -16,7 +16,7 @@ And don't forget to give us a :star: in the GitHub banner :wink:.
 
 ## Project structure
 The folders are organized as follows:
-- `ALV/` contains the Android application **ActivityLoggerVideo** used for the data collection.
+- `[ALV/](https://github.com/Soldelli/gait_anomaly_detection/tree/master/ALV)` contains the Android application **ActivityLoggerVideo** used for the data collection.
 - `pre-processing` contains the scripts to apply the preprocessing transformations of the signals described in the paper. It is the necessary data preparation step for the later use in the deep learning framework.
 - `Seq2Seq-gait-analysis/` contains the inference code and details on how to use it.
 - `Seq2Seq-gait-analysis/Data/` is a placeholder for the preprocessed gait sequences used for training and testing of the proposed network. </br>
