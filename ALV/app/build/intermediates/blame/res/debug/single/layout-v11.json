@@ -2,9 +2,5 @@
     {
         "merged": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/res/merged/debug/layout-v11/abc_screen_content_include.xml",
         "source": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/layout-v11/abc_screen_content_include.xml"
-    },
-    {
-        "merged": "/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/res/merged/debug/layout-v11/abc_screen_content_include.xml",
-        "source": "/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/layout-v11/abc_screen_content_include.xml"
     }
 ]

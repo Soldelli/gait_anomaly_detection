@@ -4,29 +4,29 @@
     api-level="27"
     density="420dpi"
     format="7"
-    timestamp="46581184602127"
-    token="1921245469834482673" >
+    timestamp="55417411178426"
+    token="3389634333153308086" >
 
     <task
         name="javac"
-        duration="5188" />
+        duration="4375" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="1749" />
+        duration="907" />
     <task
         name="verifier"
-        duration="177" />
+        duration="137" />
 
     <artifact
-        location="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/outputs/apk/app-debug.apk"
+        location="/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/outputs/apk/app-debug.apk"
         type="MAIN" />
 
-    <build timestamp="46581184602127" >
+    <build timestamp="55417411178426" >
         <artifact
-            location="/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/outputs/apk/app-debug.apk"
+            location="/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/outputs/apk/app-debug.apk"
             type="MAIN" />
     </build>
 

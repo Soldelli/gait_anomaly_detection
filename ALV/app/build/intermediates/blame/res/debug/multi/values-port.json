@@ -1,29 +1,5 @@
 [
     {
-        "outputFile": "/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/res/merged/debug/values-port/values-port.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 55,
-                    "endOffset": 106
-                },
-                "from": {
-                    "file": "/Users/Mattia/Documents/projects/gait_anomaly_detection/Software/ALV/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.0/res/values-port/values.xml",
-                    "position": {
-                        "startLine": 3,
-                        "startColumn": 4,
-                        "startOffset": 56,
-                        "endColumn": 55,
-                        "endOffset": 107
-                    }
-                }
-            }
-        ]
-    },
-    {
         "outputFile": "/Users/Mattia/Documents/projects/gait_anomaly_detection/ALV/app/build/intermediates/res/merged/debug/values-port/values-port.xml",
         "map": [
             {

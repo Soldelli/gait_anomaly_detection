@@ -1,7 +1,5 @@
 # Activity Logger Video Application
-
 This folder contains the ALV android application used for data collection. </br>
-The smartphone used in the paper submission is an "Asus Zenfone 2".</br>
 
 ## Setup
 To install this application on a smartphone follow these steps:
@@ -13,13 +11,14 @@ To install this application on a smartphone follow these steps:
 
 ## Usage
 <p align="center">
-<img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/Screenshot_app.png" width="300" height="450" hspace="50">
-<img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/chest_support.jpg" width="300" height="450" hspace="50">
+<img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/Screenshot_app.png" width="200" height="300" hspace="20">
+<img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/esample_config.png" width="200" height="300" hspace="20">
+<img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/chest_support.jpg" width="200" height="300" hspace="20">
 </p>
 
 Once the application is installed it is possible to start recording gait cycles.
 
-- Open the application and input the required information 
+- Open the application and input the required information as shown in the central image: 
     - `Name` of the user.
     - `Type` of activity.
     - Keep `camera enabled` if you are planning to test our inference model.
@@ -33,3 +32,8 @@ Once the application is installed it is possible to start recording gait cycles.
 ## Tips
 For consecutive recordings in which the parameters do not change, use a Bluetooth remote control to trigger the data acquisition.</br>
 If the inputted acquisition time is too long, a `STOP` button can be triggered to end the acquisition process.
+
+## Note
+The smartphone used in the paper submission is an "Asus Zenfone 2".</br>
+The application have been tested also on a "LG Nexus 5X".
+
