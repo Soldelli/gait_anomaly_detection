@@ -65,5 +65,5 @@ python preprocessing.py --folder raw_data
     - A file containing a set of scalars to apply to future new data for normalization purpose.
 
 ## What's more? Visualizations!
-The preprocessing is filled with (by default disabled) visualization routines for gaining more insight on the data. </br>
-Check out the `config.py` for more details and to configurate the process.
+The preprocessing is filled with (by default disabled) visualization routines for gaining more insight into the data. </br>
+Check out the `config.py` for more details and to configure the process.
