@@ -35,5 +35,5 @@ If the inputted acquisition time is too long, a `STOP` button can be triggered t
 
 ## Note
 The smartphone used in the paper submission is an "Asus Zenfone 2".</br>
-The application have been tested also on a "LG Nexus 5X".
+The application has been tested also on an "LG Nexus 5X".
 

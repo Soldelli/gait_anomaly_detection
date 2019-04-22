@@ -12,12 +12,12 @@ If you find any piece of code valuable for your research please cite this work:<
 TBD when the paper is accepted 
 ```
 
-And don't forget to give us a :star: in the github banner :wink:.
+And don't forget to give us a :star: in the GitHub banner :wink:.
 
 ## Project structure
 The folders are organized as follows:
 - `ALV/` contains the Android application **ActivityLoggerVideo** used for the data collection.
-- `pre-processing` contain the scripts to apply the preprocessing tranformations of the signals described in the paper. It is the necessary data preparation step for the later use in the deep learning framework.
+- `pre-processing` contains the scripts to apply the preprocessing transformations of the signals described in the paper. It is the necessary data preparation step for the later use in the deep learning framework.
 - `Seq2Seq-gait-analysis/` contains the inference code and details on how to use it.
 - `Seq2Seq-gait-analysis/Data/` is a placeholder for the preprocessed gait sequences used for training and testing of the proposed network. </br>
 
