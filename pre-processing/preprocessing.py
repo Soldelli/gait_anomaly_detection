@@ -47,7 +47,7 @@ print('--------------------  PREPROCESSING OF GAIT DATA  --------------------\n'
 print('Selected working directory: data/{}'.format(which_data))
 
 # Extraction of information regarding the video collected by the android app and placed in data/raw_data/* folders
-camera_tracking.camera_tracking(which_data, force=force)        
+camera_tracking(which_data, force=force)        
 
 # Load of all raw data for preprocessing procedure  -----------------------
 t = time.time()
