@@ -8,9 +8,7 @@ The proposed architecture takes advantage of RNN and CNN layers to implement a S
 ## Welcome
 If you find any piece of code valuable for your research please cite this work:</br>
 
-``` 
-TBD when the paper is accepted 
-```
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2648530.svg)](https://doi.org/10.5281/zenodo.2648530)</br>
 
 And don't forget to give us a :star: in the GitHub banner :wink:.
 
