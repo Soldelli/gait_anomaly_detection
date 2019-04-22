@@ -21,5 +21,6 @@ The folders are organized as follows:
 
 **Check each folder's README for more details**.
 
-
+## License
+The code is released under the [MIT License](https://github.com/Soldelli/gait_anomaly_detection/blob/master/LICENSE).
 					
