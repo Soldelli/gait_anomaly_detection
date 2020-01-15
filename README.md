@@ -1,6 +1,6 @@
 # Seq2Seq RNN based Gait Anomaly Detection from Smartphone Acquired Multimodal Motion Data
 Deep learning approach to anomaly detection in gait data acquired through smartphone's multimodal sensors.
-The proposed architecture takes advantage of RNN and CNN layers to implement a Sequence-to-Sequence feature extractor and a Convolutional classifier, check the paper for more details.</br>
+The proposed architecture takes advantage of RNN and CNN layers to implement a Sequence-to-Sequence feature extractor and a Convolutional classifier, check the [paper](https://arxiv.org/abs/1911.08608) for more details.</br>
 <p align="center">
 <img src="https://github.com/Soldelli/gait_anomaly_detection/blob/master/ALV/images/teaser_gait_analysis.png">
 </p>
